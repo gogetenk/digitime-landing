@@ -11,15 +11,10 @@
     <link href="css/app.css" rel="stylesheet" />
     <link rel="apple-touch-icon" sizes="512x512" href="icon-512.png" />
     <link rel="apple-touch-icon" sizes="192x192" href="icon-192.png" />
-    <!-- Chrome -->
-    <meta name="theme-color" content="#7069FA">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 </head>
 
 <body class="font-sans">
-    <div id="app">
-
-        <div id="__next">
             <header class="py-10">
                 <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <nav class="relative z-50 flex justify-between">
@@ -688,37 +683,7 @@
                     </div>
                 </div>
             </footer>
-        </div>
-    </div>
 
-    <div id="blazor-error-ui">
-        An unhandled error has occurred.
-        <a href="" class="reload">Reload</a>
-        <a class="dismiss">🗙</a>
-    </div>
-
-    <script type="text/javascript">
-        document.getElementById("signin-button").onclick = function () {
-            var script = document.createElement("script");
-            script.src = "_framework/blazor.webassembly.js";
-
-            // append and execute script
-            document.documentElement.firstChild.appendChild(script);
-            console.log("WASM loaded !")
-        };
-        document.getElementById("signin-button").onclick = function () {
-            var script = document.createElement("script");
-            script.src = "_framework/blazor.webassembly.js";
-
-            // append and execute script
-            document.documentElement.firstChild.appendChild(script);
-            console.log("WASM loaded !")
-        };
-    </script>
-
-    <script src="_content/Microsoft.AspNetCore.Components.WebAssembly.Authentication/AuthenticationService.js"></script>
-    <!--<script src="_framework/blazor.webassembly.js"></script>-->
-    <script>navigator.serviceWorker.register('service-worker.js');</script>
 </body>
 
 </html>
