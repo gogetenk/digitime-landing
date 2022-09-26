@@ -52,14 +52,6 @@
                                 <a class="inline-block rounded-lg py-1 px-2 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900" href="#pricing">Pricing</a>
                             </div>
                         </div>
-                        <div class="flex items-center gap-x-5 md:gap-x-8">
-                            <div class="hidden md:block">
-                                <button id="signin-button" class="inline-block rounded-lg py-1 px-2 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900">Sign in</button>
-                            </div>
-                            <button id="signup-button" class="group inline-flex items-center justify-center rounded-lg py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-[#7069FA] text-white hover:text-slate-100 hover:bg-blue-500 active:bg-blue-800 active:text-blue-100 focus-visible:outline-blue-600">
-                                <span>Sign up</span>
-                            </button>
-                        </div>
                     </nav>
                 </div>
             </header>
@@ -80,16 +72,15 @@
 											Digitime is a timesheet digitalization platform that provides a <span class="font-semibold">shared space</span> for you and your collaborators to <span class="font-semibold">fill-in, share, and validate timesheets</span> in a fast and convenient way. We pre-fill your collaborators timesheets by looking at their online activity, and remind them when it's time to submit it back to you.
 										</p>
                     <div class="mt-12 flex justify-center gap-x-6">
-                        <a class="group inline-flex items-center justify-center rounded-lg shadow shadow-[#7069FA] py-3 px-6 text-md font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-[#7069FA] text-white hover:bg-slate-700 hover:text-slate-100 active:bg-slate-800 active:text-slate-300 focus-visible:outline-slate-900" href="#">
-                            Create a free project
-                        </a>
-                        <a class="group inline-flex ring-1 items-center justify-center rounded-lg py-2 px-4 text-md focus:outline-none ring-slate-200 text-slate-700 hover:text-slate-900 hover:ring-slate-300 active:bg-slate-100 active:text-slate-600 focus-visible:outline-blue-600 focus-visible:ring-slate-300" 
-												href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-                            <svg aria-hidden="true" class="h-3 w-3 flex-none fill-blue-600 group-active:fill-current">
-                                <path d="m9.997 6.91-7.583 3.447A1 1 0 0 1 1 9.447V2.553a1 1 0 0 1 1.414-.91L9.997 5.09c.782.355.782 1.465 0 1.82Z"></path>
-                            </svg>
-                            <span class="ml-3">Demo</span>
-                        </a>
+											<form netlify method="post" class="mt-12 mx-auto sm:flex sm:w-full sm:max-w-lg" name="notifyme">
+												<div class="min-w-0 flex-1">
+														<label for="hero-email" class="sr-only">Business email address</label>
+														<input id="hero-email" name="email" type="email" class="block w-full rounded-md border border-gray-300 px-5 py-3 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-rose-500 focus:ring-rose-500" placeholder="Your business email">
+												</div>
+												<div class="sm:mt-0 sm:ml-3">
+														<button type="submit" class="bt-cta block w-full rounded-md border border-transparent bg-[#7069FA] px-5 py-3 text-base font-medium text-white shadow hover:bg-rose-600 focus:outline-none focus:ring-2 focus:ring-rose-500 focus:ring-offset-2 sm:px-10">Notify me</button>
+												</div>
+										</form>
                     </div>
                 </div> 
 
@@ -265,17 +256,47 @@
                     </div>
                 </div>
 
-                <section id="get-started-today" class="relative overflow-hidden bg-white pt-16 pb-64">
-                    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
-                        <div class="mx-auto max-w-lg text-center">
-                            <h2 class="font-display text-3xl tracking-tight text-[#7069FA] sm:text-4xl">Get started today</h2>
-                            <p class="mt-4 text-lg tracking-tight text-gray-500">It’s time to take control of your timesheets. Get started for free today and create your first project.</p>
-                            <a class="mt-5 group inline-flex items-center justify-center rounded-lg shadow shadow-white py-3 px-6 text-md font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-[#7069FA] text-white hover:bg-slate-700 hover:text-slate-100 active:bg-slate-800 active:text-slate-300 focus-visible:outline-slate-900" href="#">
-                                Create a project
-                            </a>
-                        </div>
-                    </div>
-                </section>
+								<div class="relative mt-24 sm:mt-32 sm:py-16">
+									<div aria-hidden="true" class="hidden sm:block">
+										<div class="absolute inset-y-0 left-0 w-1/2 rounded-r-3xl bg-gray-50"></div>
+										<svg class="absolute top-8 left-1/2 -ml-3" width="404" height="392" fill="none" viewBox="0 0 404 392">
+											<defs>
+												<pattern id="8228f071-bcee-4ec8-905a-2a059a2cc4fb" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+													<rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+												</pattern>
+											</defs>
+											<rect width="404" height="392" fill="url(#8228f071-bcee-4ec8-905a-2a059a2cc4fb)" />
+										</svg>
+									</div>
+								<div class="mx-auto max-w-md px-4 pb-16 sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
+									<div class="relative overflow-hidden rounded-2xl bg-rose-500 px-6 py-10 shadow-xl sm:px-12 sm:py-20">
+										<div aria-hidden="true" class="absolute inset-0 -mt-72 sm:-mt-32 md:mt-0">
+											<svg class="absolute inset-0 h-full w-full" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 1463 360">
+												<path class="text-rose-400 text-opacity-40" fill="currentColor" d="M-82.673 72l1761.849 472.086-134.327 501.315-1761.85-472.086z" />
+												<path class="text-rose-600 text-opacity-40" fill="currentColor" d="M-217.088 544.086L1544.761 72l134.327 501.316-1761.849 472.086z" />
+											</svg>
+										</div>
+										<div class="relative">
+											<div class="sm:text-center">
+												<h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Get notified when we&rsquo;re launching.</h2>
+												<p class="mx-auto mt-6 max-w-2xl text-lg text-rose-100">
+													We love doing a good job. And we're still doing a few tweaks to get our app perfect. So please leave us your e-mail so we can keep you posted. <br/> <span class="font-bold">No spam. Ever.</span>
+												</p>
+											</div>
+											<form netlify method="post" name="notifyme" class="mt-12 sm:mx-auto sm:flex sm:max-w-lg">
+												<div class="min-w-0 flex-1">
+													<label for="cta-email" class="sr-only">Your business e-mail</label>
+													<input id="cta-email" type="email" class="block w-full rounded-md px-5 py-3 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-transparent focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-rose-500" placeholder="Your business e-mail">
+												</div>
+												<div class="sm:mt-0 sm:ml-3">
+													<button type="submit" class="bt-cta block w-full rounded-md bg-gray-900 px-5 py-3 text-base font-medium text-white shadow hover:bg-black focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-rose-500 sm:px-10">Notify me</button>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 
                 <section class="bg-slate-50 py-20 sm:py-32 hidden">
                     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -616,8 +637,15 @@
 																<p class="mx-auto max-w-2xl text-lg text-white/[0.9]">
 																	per month.
 																</p>
-																<button type="submit" id="bt-cta-calculator" class="block mt-8 mx-auto rounded-md border-0 border-transparent bg-gray-900 px-5 py-3 text-base font-medium text-white shadow hover:bg-black focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-rose-500 sm:px-10">
-																	Create a project now
+																<form netlify method="post" name="notifyme" class="mt-12 sm:mx-auto sm:flex sm:max-w-lg">
+																	<div class="min-w-0 flex-1">
+																		<label for="cta-email" class="sr-only">Your business e-mail</label>
+																		<input id="cta-email" type="email" class="block w-full rounded-md px-5 py-3 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-transparent focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-rose-500" placeholder="Your business e-mail">
+																	</div>
+																	<div class="sm:mt-0 sm:ml-3">
+																		<button type="submit" class="bt-cta block w-full rounded-md bg-gray-900 px-5 py-3 text-base font-medium text-white shadow hover:bg-black focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-rose-500 sm:px-10">Notify me</button>
+																	</div>
+																</form>
 															</button>
 															</div>
 														</div>
@@ -626,22 +654,7 @@
                     </div>
                 </section>
             </main>
-   <!--
-  This example requires Tailwind CSS v2.0+
 
-  This example requires some changes to your config:
-
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/forms'),
-    ],
-  }
-  ```
--->
 <footer class="bg-gray-800" aria-labelledby="footer-heading">
   <h2 id="footer-heading" class="sr-only">Footer</h2>
   <div class="mx-auto max-w-7xl py-8 px-4 sm:px-6 lg:py-10 lg:px-8">
@@ -666,7 +679,7 @@
                           </li>
 
                           <li>
-                              <a href="https://medium.com/digitime-blog" about="_blank" class="text-base text-gray-300 hover:text-white">Blog</a>
+                              <a href="https://medium.com/digitime-blog" target="_blank" class="text-base text-gray-300 hover:text-white">Blog</a>
                           </li>
                       </ul>
                   </div>
@@ -731,28 +744,35 @@
 </footer>
 
 <script type="text/javascript">
-	$("#bt-estimate").on("click", async function( event ) {
-  	let editors = document.getElementById('tb-editors').value;
-		let reviewers = document.getElementById('tb-reviewers').value;
-		let timeSpent = document.getElementById('tb-time').value;
-		if(isNaN(editors) || isNaN(reviewers) || isNaN(timeSpent)) {
-			return;
-		}
-		let minTimeSpentPerEditor = 1;
-		let maxTimeSpentPerEditor = 15;
-		var resultMin = (editors * minTimeSpentPerEditor) + (reviewers * timeSpent) 
-		var resultMax = (editors * maxTimeSpentPerEditor) + (reviewers * timeSpent) 
-		$("#lb-result").text(resultMin + " to " + resultMax + " minutes");
-		$("#waves").fadeOut();
-		$("#form-estimation-bg").animate({
-      backgroundColor: "#F3455F",
-    });
-		$("#form-estimation").fadeOut(function(){
-			$("#form-result").fadeIn();
-		});
-		const jsConfetti = new JSConfetti();
-		await jsConfetti.addConfetti();
-});
+		$("#bt-estimate").on("click", async function( event ) {
+
+			gtag('send', 'event', 'Estimation Click', 'click', 'Estimate');
+
+			let editors = document.getElementById('tb-editors').value;
+			let reviewers = document.getElementById('tb-reviewers').value;
+			let timeSpent = document.getElementById('tb-time').value;
+			if(isNaN(editors) || isNaN(reviewers) || isNaN(timeSpent)) {
+				return;
+			}
+			let minTimeSpentPerEditor = 1;
+			let maxTimeSpentPerEditor = 15;
+			var resultMin = (editors * minTimeSpentPerEditor) + (reviewers * timeSpent) 
+			var resultMax = (editors * maxTimeSpentPerEditor) + (reviewers * timeSpent) 
+			$("#lb-result").text(resultMin + " to " + resultMax + " minutes");
+			$("#waves").fadeOut();
+			$("#form-estimation-bg").animate({
+				backgroundColor: "#F3455F",
+			});
+			$("#form-estimation").fadeOut(function(){
+				$("#form-result").fadeIn();
+			});
+			const jsConfetti = new JSConfetti();
+			await jsConfetti.addConfetti();
+	});
+
+	$('.bt-cta').click(function() {
+		gtag('send', 'event', 'CTA Click', 'click', 'Notify me');
+	});
 </script>
 
 </body>
