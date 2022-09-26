@@ -2,9 +2,21 @@
 <html lang="en">
 
 <head>
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZXH9GDB52Z"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-ZXH9GDB52Z');
+		</script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Digitime - TimeSheet digitalization platform</title>
+		<meta name="description" content="Digitime is a timesheet digitalization platform that provides a shared space for you and your collaborators to fill-in, share, and validate timesheets in a fast and convenient way." />
+		<meta name="author" content="Yannis Tocreau" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="canonical" href=" https://digitime.app" />
     <link href="app.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
@@ -14,20 +26,30 @@
     <link rel="apple-touch-icon" sizes="512x512" href="icon-512.png" />
     <link rel="apple-touch-icon" sizes="192x192" href="icon-192.png" />
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+		<!-- Hotjar Tracking Code for https://digitime.app -->
+		<script>
+			(function(h,o,t,j,a,r){
+					h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+					h._hjSettings={hjid:3174523,hjsv:6};
+					a=o.getElementsByTagName('head')[0];
+					r=o.createElement('script');r.async=1;
+					r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+					a.appendChild(r);
+			})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+		</script>
 </head>
 
 <body class="font-sans">
-            <header class="py-10">
+            <header class="py-10" id="header">
                 <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <nav class="relative z-50 flex justify-between">
                         <div class="flex items-center md:gap-x-12">
-                            <a aria-label="Home" href="/#">
-                                <img class="h-10 w-auto" src="img/logo2.svg" />
+                            <a aria-label="Digitime" href="#header">
+                                <img class="h-10 w-auto" src="img/logo2.svg" alt="Digitime" />
                             </a>
                             <div class="hidden md:flex md:gap-x-6">
-                                <a class="inline-block rounded-lg py-1 px-2 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900" href="/#features">Features</a>
-                                <a class="inline-block rounded-lg py-1 px-2 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900" href="/#testimonials">Testimonials</a>
-                                <a class="inline-block rounded-lg py-1 px-2 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900" href="/#pricing">Pricing</a>
+                                <a class="inline-block rounded-lg py-1 px-2 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900" href="#features">Features</a>
+                                <a class="inline-block rounded-lg py-1 px-2 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900" href="#pricing">Pricing</a>
                             </div>
                         </div>
                         <div class="flex items-center gap-x-5 md:gap-x-8">
@@ -52,9 +74,11 @@
                 </div>
             </header>
             <main>
+
+					
                 <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-60 text-center xl:pt-32 2xl:pt-32">
                     <h1 class="mx-auto max-w-7xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl">
-                        All your collaborators timesheets validated. <!-- -->
+                        All your collaborators timesheets validated. 
                         <span class="relative whitespace-nowrap text-[#7069FA]">
                             <svg aria-hidden="true" viewBox="0 0 418 42" class="absolute top-2/3 left-0 h-[0.58em] w-full fill-[#7069FA]/30" preserveAspectRatio="none">
                                 <path d="M203.371.916c-26.013-2.078-76.686 1.963-124.73 9.946L67.3 12.749C35.421 18.062 18.2 21.766 6.004 25.934 1.244 27.561.828 27.778.874 28.61c.07 1.214.828 1.121 9.595-1.176 9.072-2.377 17.15-3.92 39.246-7.496C123.565 7.986 157.869 4.492 195.942 5.046c7.461.108 19.25 1.696 19.17 2.582-.107 1.183-7.874 4.31-25.75 10.366-21.992 7.45-35.43 12.534-36.701 13.884-2.173 2.308-.202 4.407 4.442 4.734 2.654.187 3.263.157 15.593-.78 35.401-2.686 57.944-3.488 88.365-3.143 46.327.526 75.721 2.23 130.788 7.584 19.787 1.924 20.814 1.98 24.557 1.332l.066-.011c1.201-.203 1.53-1.825.399-2.335-2.911-1.31-4.893-1.604-22.048-3.261-57.509-5.556-87.871-7.36-132.059-7.842-23.239-.254-33.617-.116-50.627.674-11.629.54-42.371 2.494-46.696 2.967-2.359.259 8.133-3.625 26.504-9.81 23.239-7.825 27.934-10.149 28.304-14.005.417-4.348-3.529-6-16.878-7.066Z"></path>
@@ -62,23 +86,26 @@
                             <span class="relative">In just 1 minute.</span>
                         </span>
                     </h1>
-                    <p class="mx-auto mt-12 max-w-2xl text-lg tracking-tight text-slate-700">Digitime is a timesheet digitization platform that provides a <span class="font-semibold">shared space</span> for you and your collaborators to <span class="font-semibold">fill-in, share, and validate timesheets</span> in a fast and convenient way. We pre-fill your collaborators timesheets by looking at their online activity, and remind them when it's time to submit it back to you.</p>
-                    <div class="mt-10 flex justify-center gap-x-6">
-                        <a class="group inline-flex items-center justify-center rounded-lg shadow shadow-[#7069FA] py-3 px-6 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-[#7069FA] text-white hover:bg-slate-700 hover:text-slate-100 active:bg-slate-800 active:text-slate-300 focus-visible:outline-slate-900" href="/register">
+                    <p class="mx-auto mt-12 max-w-2xl text-lg tracking-tight text-slate-700">
+											Digitime is a timesheet digitalization platform that provides a <span class="font-semibold">shared space</span> for you and your collaborators to <span class="font-semibold">fill-in, share, and validate timesheets</span> in a fast and convenient way. We pre-fill your collaborators timesheets by looking at their online activity, and remind them when it's time to submit it back to you.
+										</p>
+                    <div class="mt-12 flex justify-center gap-x-6">
+                        <a class="group inline-flex items-center justify-center rounded-lg shadow shadow-[#7069FA] py-3 px-6 text-md font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-[#7069FA] text-white hover:bg-slate-700 hover:text-slate-100 active:bg-slate-800 active:text-slate-300 focus-visible:outline-slate-900" href="/register">
                             Create a free project
                         </a>
-                        <a class="group inline-flex ring-1 items-center justify-center rounded-lg py-2 px-4 text-sm focus:outline-none ring-slate-200 text-slate-700 hover:text-slate-900 hover:ring-slate-300 active:bg-slate-100 active:text-slate-600 focus-visible:outline-blue-600 focus-visible:ring-slate-300" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                        <a class="group inline-flex ring-1 items-center justify-center rounded-lg py-2 px-4 text-md focus:outline-none ring-slate-200 text-slate-700 hover:text-slate-900 hover:ring-slate-300 active:bg-slate-100 active:text-slate-600 focus-visible:outline-blue-600 focus-visible:ring-slate-300" 
+												href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
                             <svg aria-hidden="true" class="h-3 w-3 flex-none fill-blue-600 group-active:fill-current">
                                 <path d="m9.997 6.91-7.583 3.447A1 1 0 0 1 1 9.447V2.553a1 1 0 0 1 1.414-.91L9.997 5.09c.782.355.782 1.465 0 1.82Z"></path>
                             </svg>
                             <span class="ml-3">Demo</span>
                         </a>
                     </div>
-                </div>
+                </div> 
 
 
                 <!-- Alternating Feature Sections -->
-                <div class="relative overflow-hidden pt-16 pb-32">
+                <div class="relative overflow-hidden pt-16 pb-32" id="features">
                     <div aria-hidden="true" class="absolute inset-x-0 top-0 h-48 bg-gradient-to-b from-gray-100"></div>
                     <div class="relative">
                         <div class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8">
@@ -123,7 +150,7 @@
                             </div>
                             <div class="mt-12 sm:mt-16 lg:mt-0">
                                 <div class="-mr-48 pl-4 sm:pl-6 md:-mr-16 lg:relative lg:m-0 lg:h-full lg:px-0">
-                                    <img class="w-full lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none" src="img/feature1.svg" alt="Inbox user interface">
+                                    <img class="w-full lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none" src="img/easy-timesheet-validation.svg" alt="Inbox user interface">
                                 </div>
                             </div>
                         </div>
@@ -140,7 +167,7 @@
                                         </span>
                                     </div>
                                     <div class="mt-6">
-                                      <h2 class="text-3xl font-bold tracking-tight text-gray-900">Avoid delays by setting up reminders.</h2>
+                                      <h2 class="text-3xl font-bold tracking-tight text-gray-900">Avoid timesheet submissions delays by setting up reminders.</h2>
                                       <p class="mt-4 text-lg text-gray-500">
                                           Tired of reminding your coworkers to fill-in their timesheets on time every month ? <br /> <br />
 
@@ -155,13 +182,13 @@
                             </div>
                             <div class="mt-12 sm:mt-16 lg:col-start-1 lg:mt-0">
                                 <div class="-ml-48 pr-4 sm:pr-6 md:-ml-16 lg:relative lg:m-0 lg:h-full lg:px-0">
-                                    <img class="w-full lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none" src="img/feature2.svg" alt="Customer profile user interface">
+                                    <img class="w-full lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none" src="img/avoid-delays-reminders.svg" alt="Avoid timesheet submissions delays by setting up reminders">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="relative overflow-hidden pt-16 pb-32">
+                <div class="relative overflow-hidden pt-16 pb-16">
                     <div aria-hidden="true" class="absolute inset-x-0 top-0 h-48 bg-white"></div>
                     <div class="relative">
                         <div class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-2 lg:px-8">
@@ -199,7 +226,7 @@
                                       <footer class="mt-3">
                                           <div class="flex items-center space-x-3">
                                               <div class="flex-shrink-0">
-                                                  <img class="h-6 w-6 rounded-full" src="img/profilepic.jpg" alt="Yannis Tocreau, Software Architect">
+                                                  <img class="h-6 w-6 rounded-full" src="img/profile2.jpg" alt="Yannis Tocreau, Software Architect">
                                               </div>
                                               <div class="text-base font-medium text-gray-700">Yannis Tocreau, Software Architect</div>
                                           </div>
@@ -210,7 +237,7 @@
                               
                             <div class="mt-12 sm:mt-16 lg:mt-0">
                                 <div class="-mr-48 pl-4 sm:pl-6 md:-mr-16 lg:relative lg:m-0 lg:h-full lg:px-0">
-                                    <img class="w-full lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none" src="img/feature3.svg" alt="Faster submissions with the pre-filled timesheets">
+                                    <img class="w-full lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none" src="img/pre-filled-timesheets.svg" alt="Faster submissions with the pre-filled timesheets">
                                 </div>
                             </div>
                         </div>
@@ -227,7 +254,7 @@
                                         </span>
                                     </div>
                                     <div class="mt-6">
-                                        <h2 class="text-3xl font-bold tracking-tight text-gray-900">Report all TimeSheet data to another tool</h2>
+                                        <h2 class="text-3xl font-bold tracking-tight text-gray-900">Report all timesheet data to other tools</h2>
                                         <p class="mt-4 text-lg text-gray-500">
                                             Already using another tool ? <br /> <br />
 
@@ -242,25 +269,24 @@
                             </div>
                             <div class="mt-12 sm:mt-16 lg:col-start-1 lg:mt-0">
                                 <div class="-ml-48 pr-4 sm:pr-6 md:-ml-16 lg:relative lg:m-0 lg:h-full lg:px-0">
-                                    <img class="w-full lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none" src="img/feature4.svg" alt="Customer profile user interface">
+                                    <img class="w-full lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none" src="img/timesheet-data-export.svg" alt="Report all timesheet data to other tools">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!--<section id="get-started-today" class="relative overflow-hidden bg-[#7069FA] py-32">
-                    <img alt="" src="/_next/static/media/background-call-to-action.6a5a5672.jpg" width="2347" height="1244" decoding="async" data-nimg="future" class="absolute top-1/2 left-1/2 max-w-none -translate-x-1/2 -translate-y-1/2" loading="lazy" style="color:transparent">
+                <section id="get-started-today" class="relative overflow-hidden bg-white pt-16 pb-64">
                     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
                         <div class="mx-auto max-w-lg text-center">
-                            <h2 class="font-display text-3xl tracking-tight text-white sm:text-4xl">Get started today</h2>
-                            <p class="mt-4 text-lg tracking-tight text-white">It’s time to take control of your books. Buy our software so you can feel like you’re doing something productive.</p>
-                            <a class="mt-5 group inline-flex items-center justify-center rounded-lg shadow shadow-white py-3 px-6 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-white text-black hover:bg-slate-700 hover:text-slate-100 active:bg-slate-800 active:text-slate-300 focus-visible:outline-slate-900" href="/register">
+                            <h2 class="font-display text-3xl tracking-tight text-[#7069FA] sm:text-4xl">Get started today</h2>
+                            <p class="mt-4 text-lg tracking-tight text-gray-500">It’s time to take control of your timesheets. Get started for free today and create your first project.</p>
+                            <a class="mt-5 group inline-flex items-center justify-center rounded-lg shadow shadow-white py-3 px-6 text-md font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-[#7069FA] text-white hover:bg-slate-700 hover:text-slate-100 active:bg-slate-800 active:text-slate-300 focus-visible:outline-slate-900" href="/register">
                                 Create a project
                             </a>
                         </div>
                     </div>
-                </section>-->
+                </section>
 
                 <section class="bg-slate-50 py-20 sm:py-32 hidden">
                     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -634,10 +660,12 @@
           <div class="grid grid-cols-2 gap-8 xl:col-span-4">
               <div class="md:grid md:grid-cols-2 md:gap-8">
                   <div>
+										<a aria-label="Digitime" href="#header">
                       <div class="space-y-2 xl:col-span-1">
                           <img class="h-8" src="img/logo-white.svg" alt="Digitime">
-                          <p class="text-base text-gray-500">The TimeSheet digitalization platform.</p>
+                          <p class="text-base text-gray-500">The timesheet digitalization platform.</p>
                       </div>
+										</a>
                   </div>
                   <div class="mt-12 md:mt-0">
                       <h3 class="text-base font-medium text-white">Support</h3>
@@ -695,10 +723,9 @@
                       <div class="relative">
                           <select id="language" name="language" class="block w-full appearance-none rounded-md border-transparent bg-gray-700 bg-none py-2 pl-3 pr-10 text-base text-white focus:border-white focus:outline-none focus:ring-white sm:text-sm">
                               <option selected>English</option>
-                              <option>French</option>
+                              <!-- <option>French</option>
                               <option>German</option>
-                              <option>Japanese</option>
-                              <option>Spanish</option>
+                              <option>Spanish</option> -->
                           </select>
                           <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2">
                               <!-- Heroicon name: mini/chevron-down -->
@@ -713,21 +740,21 @@
       </div>
       <div class="mt-4 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between">
           <div class="flex space-x-6 md:order-2">
-              <a href="#" class="text-gray-400 hover:text-gray-300">
+              <a href="https://www.linkedin.com/company/digitimeapp" target="_blank" class="text-gray-400 hover:text-gray-300">
                   <span class="sr-only">YouTube</span>
                   <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 50 50" aria-hidden="true">
                       <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z" />
                   </svg>
               </a>
 
-              <a href="#" class="text-gray-400 hover:text-gray-300">
+              <a href="https://www.instagram.com/digitime.app/" target="_blank" class="text-gray-400 hover:text-gray-300">
                   <span class="sr-only">Instagram</span>
                   <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                       <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" />
                   </svg>
               </a>
 
-              <a href="#" class="text-gray-400 hover:text-gray-300">
+              <a href="https://www.youtube.com/channel/UCZxpwxvsd-vipKBROApmRNg" target="_blank" class="text-gray-400 hover:text-gray-300">
                   <span class="sr-only">YouTube</span>
                   <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 461.001 461.001" aria-hidden="true">
                       <path d="M365.257,67.393H95.744C42.866,67.393,0,110.259,0,163.137v134.728 c0,52.878,42.866,95.744,95.744,95.744h269.513c52.878,0,95.744-42.866,95.744-95.744V163.137 C461.001,110.259,418.135,67.393,365.257,67.393z M300.506,237.056l-126.06,60.123c-3.359,1.602-7.239-0.847-7.239-4.568V168.607 c0-3.774,3.982-6.22,7.348-4.514l126.06,63.881C304.363,229.873,304.298,235.248,300.506,237.056z" />
