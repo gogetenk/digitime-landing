@@ -7,6 +7,8 @@
     <title>Digitime - TimeSheet digitalization platform</title>
     <link href="app.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
     <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
     <link href="css/app.css" rel="stylesheet" />
     <link rel="apple-touch-icon" sizes="512x512" href="icon-512.png" />
@@ -50,7 +52,7 @@
                 </div>
             </header>
             <main>
-                <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-20 pb-40 text-center lg:pt-60">
+                <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-60 text-center xl:pt-32 2xl:pt-32">
                     <h1 class="mx-auto max-w-7xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl">
                         All your collaborators timesheets validated. <!-- -->
                         <span class="relative whitespace-nowrap text-[#7069FA]">
@@ -111,9 +113,9 @@
                                         <footer class="mt-3">
                                             <div class="flex items-center space-x-3">
                                                 <div class="flex-shrink-0">
-                                                    <img class="h-6 w-6 rounded-full" src="https://images.unsplash.com/photo-1509783236416-c9ad59bae472?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80" alt="">
+                                                    <img class="h-6 w-6 rounded-full" src="img/testimony1.jpg" alt="Kinga Wenta, QA Manager">
                                                 </div>
-                                                <div class="text-base font-medium text-gray-700">Marcia Hill, Digital Marketing Manager</div>
+                                                <div class="text-base font-medium text-gray-700">Kinga Wenta, QA Manager</div>
                                             </div>
                                         </footer>
                                     </blockquote>
@@ -121,7 +123,7 @@
                             </div>
                             <div class="mt-12 sm:mt-16 lg:mt-0">
                                 <div class="-mr-48 pl-4 sm:pl-6 md:-mr-16 lg:relative lg:m-0 lg:h-full lg:px-0">
-                                    <img class="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none" src="img/screen1.png" alt="Inbox user interface">
+                                    <img class="w-full lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none" src="img/feature1.svg" alt="Inbox user interface">
                                 </div>
                             </div>
                         </div>
@@ -132,31 +134,28 @@
                                 <div>
                                     <div>
                                         <span class="flex h-12 w-12 items-center justify-center rounded-md bg-gradient-to-r from-purple-600 to-indigo-600">
-                                            <!-- Heroicon name: outline/sparkles -->
-                                            <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                                                <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z" />
-                                            </svg>
+                                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0M3.124 7.5A8.969 8.969 0 015.292 3m13.416 0a8.969 8.969 0 012.168 4.5" />
+                                        </svg>
                                         </span>
                                     </div>
                                     <div class="mt-6">
-                                        <h2 class="text-3xl font-bold tracking-tight text-gray-900">Faster submissions with the pre-filled timesheets</h2>
-                                        <p class="mt-4 text-lg text-gray-500">
-                                            You'll have more chance to get accurate timesheets on time if you let us pre-fill
-                                            the timesheets of your coworkers. <br />
-                                            Digitime is able to capture the online activity of your team, so no human intervention is required.
-                                            Your coworkers can plug their work tools and let us do all the work.<br /><br />
+                                      <h2 class="text-3xl font-bold tracking-tight text-gray-900">Avoid delays by setting up reminders.</h2>
+                                      <p class="mt-4 text-lg text-gray-500">
+                                          Tired of reminding your coworkers to fill-in their timesheets on time every month ? <br /> <br />
 
-                                            Your coworkers will always have the choice to use this feature or not. <span class="font-bold">No monitoring will be done against their will.</span>
-                                        </p>
-                                        <div class="mt-6">
-                                            <a href="#" class="inline-flex rounded-md border-1 border-[#7069FA] px-5 py-3 text-base font-medium text-[#7069FA] hover:from-purple-700 hover:to-indigo-700">Get started</a>
-                                        </div>
-                                    </div>
+                                          Enable reminders for you team, so they'll get notified when it's time to complete their TimeSheet, wherever they are.<br />
+                                          Get your coworker's timesheets on time. <span class="fw-bold">No delay.</span>
+                                      </p>
+                                      <div class="mt-6">
+                                          <a href="#" class="inline-flex rounded-md border-1 border-[#7069FA] px-5 py-3 text-base font-medium text-[#7069FA] hover:from-purple-700 hover:to-indigo-700">Get started</a>
+                                      </div>
+                                  </div>
                                 </div>
                             </div>
                             <div class="mt-12 sm:mt-16 lg:col-start-1 lg:mt-0">
                                 <div class="-ml-48 pr-4 sm:pr-6 md:-ml-16 lg:relative lg:m-0 lg:h-full lg:px-0">
-                                    <img class="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none" src="img/screen2.png" alt="Customer profile user interface">
+                                    <img class="w-full lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none" src="img/feature2.svg" alt="Customer profile user interface">
                                 </div>
                             </div>
                         </div>
@@ -165,40 +164,59 @@
                 <div class="relative overflow-hidden pt-16 pb-32">
                     <div aria-hidden="true" class="absolute inset-x-0 top-0 h-48 bg-white"></div>
                     <div class="relative">
-                        <div class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8">
-                            <div class="mx-auto max-w-xl px-4 sm:px-6 lg:mx-0 lg:max-w-none lg:py-16 lg:px-0">
+                        <div class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-2 lg:px-8">
+                            <div class="mx-auto max-w-xl px-4 sm:px-6 lg:mx-0 lg:max-w-none lg:py-12 lg:px-0">
                                 <div>
                                     <div>
                                         <span class="flex h-12 w-12 items-center justify-center rounded-md bg-gradient-to-r from-purple-600 to-indigo-600">
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-white">
-                                                <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0M3.124 7.5A8.969 8.969 0 015.292 3m13.416 0a8.969 8.969 0 012.168 4.5" />
+                                              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
                                             </svg>
-
                                         </span>
                                     </div>
                                     <div class="mt-6">
-                                        <h2 class="text-3xl font-bold tracking-tight text-gray-900">Avoid delays by setting up reminders.</h2>
-                                        <p class="mt-4 text-lg text-gray-500">
-                                            Tired of reminding your coworkers to fill-in their timesheets on time every month ? <br /> <br />
+                                      <h2 class="text-3xl font-bold tracking-tight text-gray-900">Faster submissions with the pre-filled timesheets</h2>
+                                      <p class="mt-4 text-lg text-gray-500">
+                                          You'll have more chance to get accurate timesheets on time if you let us pre-fill
+                                          the timesheets of your coworkers. <br />
+                                          Digitime is able to capture the online activity of your team, so no human intervention is required.
+                                          Your coworkers can plug their work tools and let us do all the work.<br /><br />
 
-                                            Enable reminders for you team, so they'll get notified when it's time to complete their TimeSheet, wherever they are.<br />
-                                            Get your coworker's timesheets on time. <span class="fw-bold">No delay.</span>
-                                        </p>
-                                        <div class="mt-6">
-                                            <a href="#" class="inline-flex rounded-md border-1 border-[#7069FA] px-5 py-3 text-base font-medium text-[#7069FA] hover:from-purple-700 hover:to-indigo-700">Get started</a>
-                                        </div>
-                                    </div>
+                                          Your coworkers will always have the choice to use this feature or not. <span class="font-bold">No monitoring will be done against their will.</span>
+                                      </p>
+                                      <div class="mt-6">
+                                          <a href="#" class="inline-flex rounded-md border-1 border-[#7069FA] px-5 py-3 text-base font-medium text-[#7069FA] hover:from-purple-700 hover:to-indigo-700">Get started</a>
+                                      </div>
+                                  </div>
+                                  
                                 </div>
+                                <div class="mt-8 border-t border-gray-200 pt-6">
+                                  <blockquote>
+                                      <div>
+                                          <p class="text-base text-gray-500">&ldquo;As an engineer, I was afraid that my customer could track me through Digitime. But in fact, I can disable or modify all the resulting data. 
+                                            Plugging his favorite work tools is a time saver for filling my timesheet. And I stay in command!&rdquo;</p>
+                                      </div>
+                                      <footer class="mt-3">
+                                          <div class="flex items-center space-x-3">
+                                              <div class="flex-shrink-0">
+                                                  <img class="h-6 w-6 rounded-full" src="img/profilepic.jpg" alt="Yannis Tocreau, Software Architect">
+                                              </div>
+                                              <div class="text-base font-medium text-gray-700">Yannis Tocreau, Software Architect</div>
+                                          </div>
+                                      </footer>
+                                  </blockquote>
+                              </div>
                             </div>
+                              
                             <div class="mt-12 sm:mt-16 lg:mt-0">
                                 <div class="-mr-48 pl-4 sm:pl-6 md:-mr-16 lg:relative lg:m-0 lg:h-full lg:px-0">
-                                    <img class="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none" src="https://tailwindui.com/img/component-images/inbox-app-screenshot-1.jpg" alt="Inbox user interface">
+                                    <img class="w-full lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none" src="img/feature3.svg" alt="Faster submissions with the pre-filled timesheets">
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="mt-24">
-                        <div class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-24 lg:px-8">
+                        <div class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-flow-col-dense lg:grid-cols-2 lg:gap-2 lg:px-8">
                             <div class="mx-auto max-w-xl px-4 sm:px-6 lg:col-start-2 lg:mx-0 lg:max-w-none lg:py-32 lg:px-0">
                                 <div>
                                     <div>
@@ -224,7 +242,7 @@
                             </div>
                             <div class="mt-12 sm:mt-16 lg:col-start-1 lg:mt-0">
                                 <div class="-ml-48 pr-4 sm:pr-6 md:-ml-16 lg:relative lg:m-0 lg:h-full lg:px-0">
-                                    <img class="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none" src="https://tailwindui.com/img/component-images/inbox-app-screenshot-2.jpg" alt="Customer profile user interface">
+                                    <img class="w-full lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none" src="img/feature4.svg" alt="Customer profile user interface">
                                 </div>
                             </div>
                         </div>
@@ -491,16 +509,17 @@
                         </div>
                     </div>
 
-                    <div class="mx-auto max-w-md sm:max-w-3xl lg:max-w-7xl mt-16">
-                        <div class="relative overflow-hidden rounded-2xl bg-[#0BCA97] px-6 py-10 shadow-xl sm:px-12 sm:py-20">
-                            <div aria-hidden="true" class="absolute inset-0 -mt-72 sm:-mt-32 md:mt-0">
+                    <div class="mx-auto max-w-md sm:max-w-3xl lg:max-w-7xl mt-16 text-center">
+                        <div id="form-estimation-bg" class="relative overflow-hidden rounded-2xl bg-[#0BCA97] px-6 py-10 shadow-xl sm:px-12 sm:py-20">
+                            <div id="waves" aria-hidden="true" class="absolute inset-0 -mt-72 sm:-mt-32 md:mt-0">
                                 <svg class="absolute inset-0 h-full w-full" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 1463 360">
                                     <path class="text-[#CCDD53] text-opacity-40" fill="currentColor" d="M-82.673 72l1761.849 472.086-134.327 501.315-1761.85-472.086z" />
                                     <path class="text-[#CCDD53] text-opacity-40" fill="currentColor" d="M-217.088 544.086L1544.761 72l134.327 501.316-1761.849 472.086z" />
                                 </svg>
                             </div>
-                            <div class="relative">
-                                <div class="sm:text-center">
+
+                            <div id="form-estimation" class="relative">
+                                <div class="sm:text-center sm:mx-10">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-white mx-auto mb-4">
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 15.75V18m-7.5-6.75h.008v.008H8.25v-.008zm0 2.25h.008v.008H8.25V13.5zm0 2.25h.008v.008H8.25v-.008zm0 2.25h.008v.008H8.25V18zm2.498-6.75h.007v.008h-.007v-.008zm0 2.25h.007v.008h-.007V13.5zm0 2.25h.007v.008h-.007v-.008zm0 2.25h.007v.008h-.007V18zm2.504-6.75h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V13.5zm0 2.25h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V18zm2.498-6.75h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V13.5zM8.25 6h7.5v2.25h-7.5V6zM12 2.25c-1.892 0-3.758.11-5.593.322C5.307 2.7 4.5 3.65 4.5 4.757V19.5a2.25 2.25 0 002.25 2.25h10.5a2.25 2.25 0 002.25-2.25V4.757c0-1.108-.806-2.057-1.907-2.185A48.507 48.507 0 0012 2.25z" />
                                     </svg>
@@ -511,9 +530,9 @@
                                         Use our calculator to have an idea of the amount of time your company would save if you were using Digitime.
                                     </p>
                                 </div>
-                                <form action="#" class="mt-12 sm:mx-auto sm:max-w-lg">
+                                <div class="mt-12 sm:mx-auto sm:max-w-lg">
                                     <div class="min-w-0 flex-1 mt-3">
-                                        <label for="editor-number" class="text-white font-bold mb-1 ml-16">
+                                        <label for="tb-editors" class="text-white font-bold mb-1">
                                             How many timesheets editors in your company ?
                                         </label>
                                         <div class="relative mt-1 rounded-md shadow-sm mx-10">
@@ -523,28 +542,25 @@
                                                 </svg>
 
                                             </div>
-                                            <input id="editor-number" type="number" class="block w-full rounded-md border-0 border-transparent px-5 py-3 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-transparent focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-rose-500"
+                                            <input id="tb-editors" type="number" min="1" onkeydown="return event.keyCode !== 69" class="block w-full rounded-md border-0 border-transparent px-5 py-3 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-transparent focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-rose-500"
                                                    placeholder="Employees, contractors, consultants...">
                                         </div>
                                     </div>
 
                                     <div class="min-w-0 flex-1 mt-3">
-                                        <label for="reviewers-number" class="text-white font-bold mb-1 ml-14">How many timesheets reviewers in your company ?</label>
+                                        <label for="tb-reviewers" class="text-white font-bold mb-1">How many timesheets reviewers in your company ?</label>
                                         <div class="relative mt-1 rounded-md shadow-sm mx-10">
                                             <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
                                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-gray-500 mr-2">
                                                     <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
                                                 </svg>
                                             </div>
-                                            <input id="reviewers-number" type="number" class="block w-full rounded-md border-0 border-transparent px-5 py-3 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-transparent focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-rose-500"
+                                            <input id="tb-reviewers" type="number" min="1" onkeydown="return event.keyCode !== 69" class="block w-full rounded-md border-0 border-transparent px-5 py-3 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-transparent focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-rose-500"
                                                    placeholder="Team leads, managers, commercials...">
                                         </div>
-
                                     </div>
                                     <div class="min-w-0 flex-1 mt-3">
-                                        <div class="flex flex-1 ml-10">
-                                            <label for="time-toreview" class="text-white font-bold mb-1">Time you spend on reviewing timesheets each month ?</label>
-                                        </div>
+                                      	<label for="tb-time" class="text-white font-bold mb-1">Time you spend on reviewing timesheets each month ?</label>
                                         <div class="relative mt-1 rounded-md shadow-sm mx-10">
                                             <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
                                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-gray-500 mr-2">
@@ -552,119 +568,201 @@
                                                 </svg>
 
                                             </div>
-                                            <input id="time-toreview" type="number" class="block w-full rounded-md border-0 border-transparent px-5 py-3 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-transparent focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-rose-500"
+                                            <input id="tb-time" type="number" min="1" onkeydown="return event.keyCode !== 69" class="block w-full rounded-md border-0 border-transparent px-5 py-3 text-base text-gray-900 placeholder-gray-500 shadow-sm focus:border-transparent focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-rose-500"
                                                    placeholder="In minutes">
                                         </div>
 
                                     </div>
                                     <div class="mt-4 sm:mt-2 mx-10">
-                                        <button type="submit" class="block mt-8 w-full rounded-md border-0 border-transparent bg-gray-900 px-5 py-3 text-base font-medium text-white shadow hover:bg-black focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-rose-500 sm:px-10">
+                                        <button type="submit" id="bt-estimate" class="block mt-8 w-full rounded-md border-0 border-transparent bg-gray-900 px-5 py-3 text-base font-medium text-white shadow hover:bg-black focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-rose-500 sm:px-10">
                                             Estimate
                                         </button>
                                     </div>
                                     <div class="mt-1 sm:mt-1 text-center">
                                         <a id="signin-button" class="inline-block py-1 px-2 text-sm text-white text-decoration-underline">Calculation details</a>
                                     </div>
-                                </form>
+																	</div>
                             </div>
+														
+														<div id="form-result" class="hidden">
+															<div class="sm:text-center sm:mx-10">
+																<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 text-white mx-auto mb-4">
+																		<path stroke-linecap="round" stroke-linejoin="round" d="M15.75 15.75V18m-7.5-6.75h.008v.008H8.25v-.008zm0 2.25h.008v.008H8.25V13.5zm0 2.25h.008v.008H8.25v-.008zm0 2.25h.008v.008H8.25V18zm2.498-6.75h.007v.008h-.007v-.008zm0 2.25h.007v.008h-.007V13.5zm0 2.25h.007v.008h-.007v-.008zm0 2.25h.007v.008h-.007V18zm2.504-6.75h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V13.5zm0 2.25h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V18zm2.498-6.75h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V13.5zM8.25 6h7.5v2.25h-7.5V6zM12 2.25c-1.892 0-3.758.11-5.593.322C5.307 2.7 4.5 3.65 4.5 4.757V19.5a2.25 2.25 0 002.25 2.25h10.5a2.25 2.25 0 002.25-2.25V4.757c0-1.108-.806-2.057-1.907-2.185A48.507 48.507 0 0012 2.25z" />
+																</svg>
+																<h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+																	Congratulations ! 🥳
+																</h2>
+																<p class="mx-auto mt-6 max-w-2xl text-lg text-white/[0.9]">
+																	You would save roughly
+																</p>
+																<p id="lb-result" class="mx-auto max-w-2xl font-black text-3xl text-black/[0.9]">
+																	From 521 to 624 minutes 
+																</p>
+																<p class="mx-auto max-w-2xl text-lg text-white/[0.9]">
+																	per month.
+																</p>
+																<button type="submit" id="bt-cta-calculator" class="block mt-8 mx-auto rounded-md border-0 border-transparent bg-gray-900 px-5 py-3 text-base font-medium text-white shadow hover:bg-black focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-rose-500 sm:px-10">
+																	Create a project now
+															</button>
+															</div>
+														</div>
                         </div>
-                    </div>
-                </section>
-                <section id="faq" aria-labelledby="faq-title" class="relative overflow-hidden bg-slate-50 py-20 sm:py-32">
-                    <img alt="" src="/_next/static/media/background-faqs.55d2e36a.jpg" width="1558" height="946" decoding="async" data-nimg="future" class="absolute top-0 left-1/2 max-w-none translate-x-[-30%] -translate-y-1/4" loading="lazy" style="color:transparent">
-                    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
-                        <div class="mx-auto max-w-2xl lg:mx-0">
-                            <h2 id="faq-title" class="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">Frequently asked questions</h2>
-                            <p class="mt-4 text-lg tracking-tight text-slate-700">If you can’t find what you’re looking for, email our support team, we will get back to you.</p>
-                        </div>
-                        <ul role="list" class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 lg:max-w-none lg:grid-cols-3">
-                            <li>
-                                <ul role="list" class="flex flex-col gap-y-8">
-                                    <li>
-                                        <h3 class="font-display text-lg leading-7 text-slate-900">What are "Projects"?</h3>
-                                        <p class="mt-4 text-sm text-slate-700">
-                                            Digitime Projects are what your collaborators are going to work on. The time they spend working for you will be assigned to any of it.
-                                            Invite your teammates to your projects so they will be able specify them on their timesheets.
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <h3 class="font-display text-lg leading-7 text-slate-900">Can I pay for my subscription via purchase order?</h3>
-                                        <p class="mt-4 text-sm text-slate-700">Absolutely, we are happy to take your money in all forms.</p>
-                                    </li>
-                                    <li>
-                                        <h3 class="font-display text-lg leading-7 text-slate-900">What is the difference between Projects and Workspaces?</h3>
-                                        <p class="mt-4 text-sm text-slate-700">We only hire our customers, so subscribe for a minimum of 6 months and then let’s talk.</p>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <ul role="list" class="flex flex-col gap-y-8">
-                                    <li>
-                                        <h3 class="font-display text-lg leading-7 text-slate-900">What was that testimonial about tax fraud all about?</h3>
-                                        <p class="mt-4 text-sm text-slate-700">TaxPal is just a software application, ultimately your books are your responsibility.</p>
-                                    </li>
-                                    <li>
-                                        <h3 class="font-display text-lg leading-7 text-slate-900">TaxPal sounds horrible but why do I still feel compelled to purchase?</h3>
-                                        <p class="mt-4 text-sm text-slate-700">This is the power of excellent visual design. You just can’t resist it, no matter how poorly it actually functions.</p>
-                                    </li>
-                                    <li>
-                                        <h3 class="font-display text-lg leading-7 text-slate-900">I found other companies called TaxPal, are you sure you can use this name?</h3>
-                                        <p class="mt-4 text-sm text-slate-700">Honestly not sure at all. We haven’t actually incorporated or anything, we just thought it sounded cool and made this website.</p>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <ul role="list" class="flex flex-col gap-y-8">
-                                    <li>
-                                        <h3 class="font-display text-lg leading-7 text-slate-900">How do you generate reports?</h3>
-                                        <p class="mt-4 text-sm text-slate-700">You just tell us what data you need a report for, and we get our kids to create beautiful charts for you using only the finest crayons.</p>
-                                    </li>
-                                    <li>
-                                        <h3 class="font-display text-lg leading-7 text-slate-900">Can we expect more inventory features?</h3>
-                                        <p class="mt-4 text-sm text-slate-700">In life it’s really better to never expect anything at all.</p>
-                                    </li>
-                                    <li>
-                                        <h3 class="font-display text-lg leading-7 text-slate-900">I lost my password, how do I get into my account?</h3>
-                                        <p class="mt-4 text-sm text-slate-700">Send us an email and we will send you a copy of our latest password spreadsheet so you can find your information.</p>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
+												
                     </div>
                 </section>
             </main>
-            <footer class="bg-slate-50">
-                <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                    <div class="py-16">
-                        <img src="img/logo2.svg" class="mx-auto h-10 w-auto" />
-                        <nav class="mt-10 text-sm" aria-label="quick links">
-                            <div class="-my-1 flex justify-center gap-x-6">
-                                <a class="inline-block rounded-lg py-1 px-2 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900" href="/#features">Features</a>
-                                <a class="inline-block rounded-lg py-1 px-2 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900" href="/#testimonials">Testimonials</a>
-                                <a class="inline-block rounded-lg py-1 px-2 text-sm text-slate-700 hover:bg-slate-100 hover:text-slate-900" href="/#pricing">Pricing</a>
-                            </div>
-                        </nav>
-                    </div>
-                    <div class="flex flex-col items-center border-t border-slate-400/10 py-10 sm:flex-row-reverse sm:justify-between">
-                        <div class="flex gap-x-6">
-                            <a class="group" aria-label="TaxPal on Twitter" href="https://twitter.com">
-                                <svg aria-hidden="true" class="h-6 w-6 fill-slate-500 group-hover:fill-slate-700">
-                                    <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0 0 22 5.92a8.19 8.19 0 0 1-2.357.646 4.118 4.118 0 0 0 1.804-2.27 8.224 8.224 0 0 1-2.605.996 4.107 4.107 0 0 0-6.993 3.743 11.65 11.65 0 0 1-8.457-4.287 4.106 4.106 0 0 0 1.27 5.477A4.073 4.073 0 0 1 2.8 9.713v.052a4.105 4.105 0 0 0 3.292 4.022 4.093 4.093 0 0 1-1.853.07 4.108 4.108 0 0 0 3.834 2.85A8.233 8.233 0 0 1 2 18.407a11.615 11.615 0 0 0 6.29 1.84"></path>
-                                </svg>
-                            </a>
-                            <a class="group" aria-label="TaxPal on GitHub" href="https://github.com">
-                                <svg aria-hidden="true" class="h-6 w-6 fill-slate-500 group-hover:fill-slate-700">
-                                    <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2Z"></path>
-                                </svg>
-                            </a>
-                        </div>
-                        <p class="mt-6 text-sm text-slate-500 sm:mt-0">
-                            Copyright © <!-- -->2022<!-- --> YT DEVELOPPEMENT. All rights reserved.
-                        </p>
-                    </div>
-                </div>
-            </footer>
+   <!--
+  This example requires Tailwind CSS v2.0+
+
+  This example requires some changes to your config:
+
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/forms'),
+    ],
+  }
+  ```
+-->
+<footer class="bg-gray-800" aria-labelledby="footer-heading">
+  <h2 id="footer-heading" class="sr-only">Footer</h2>
+  <div class="mx-auto max-w-7xl py-8 px-4 sm:px-6 lg:py-10 lg:px-8">
+      <div class="mt-12 pb-8 xl:grid xl:grid-cols-5 xl:gap-8">
+          <div class="grid grid-cols-2 gap-8 xl:col-span-4">
+              <div class="md:grid md:grid-cols-2 md:gap-8">
+                  <div>
+                      <div class="space-y-2 xl:col-span-1">
+                          <img class="h-8" src="img/logo-white.svg" alt="Digitime">
+                          <p class="text-base text-gray-500">The TimeSheet digitalization platform.</p>
+                      </div>
+                  </div>
+                  <div class="mt-12 md:mt-0">
+                      <h3 class="text-base font-medium text-white">Support</h3>
+                      <ul role="list" class="mt-4 space-y-4">
+                          <li>
+                              <a href="#" class="text-base text-gray-300 hover:text-white">Pricing</a>
+                          </li>
+
+                          <li>
+                              <a href="#" class="text-base text-gray-300 hover:text-white">Documentation</a>
+                          </li>
+
+                          <li>
+                              <a href="#" class="text-base text-gray-300 hover:text-white">Contact us</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="md:grid md:grid-cols-2 md:gap-8">
+                  <div>
+                      <h3 class="text-base font-medium text-white">Company</h3>
+                      <ul role="list" class="mt-4 space-y-4">
+                          <li>
+                              <a href="#" class="text-base text-gray-300 hover:text-white">About</a>
+                          </li>
+
+                          <li>
+                              <a href="#" class="text-base text-gray-300 hover:text-white">Blog</a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="mt-12 md:mt-0">
+                      <h3 class="text-base font-medium text-white">Legal</h3>
+                      <ul role="list" class="mt-4 space-y-4">
+                          <li>
+                              <a href="#" class="text-base text-gray-300 hover:text-white">Claim</a>
+                          </li>
+
+                          <li>
+                              <a href="#" class="text-base text-gray-300 hover:text-white">Privacy</a>
+                          </li>
+
+                          <li>
+                              <a href="#" class="text-base text-gray-300 hover:text-white">Terms</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+          <div class="mt-12 xl:mt-0">
+              <h3 class="text-base font-medium text-white">Language</h3>
+              <form class="mt-4 sm:max-w-xs">
+                  <fieldset class="w-full">
+                      <label for="language" class="sr-only">Language</label>
+                      <div class="relative">
+                          <select id="language" name="language" class="block w-full appearance-none rounded-md border-transparent bg-gray-700 bg-none py-2 pl-3 pr-10 text-base text-white focus:border-white focus:outline-none focus:ring-white sm:text-sm">
+                              <option selected>English</option>
+                              <option>French</option>
+                              <option>German</option>
+                              <option>Japanese</option>
+                              <option>Spanish</option>
+                          </select>
+                          <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2">
+                              <!-- Heroicon name: mini/chevron-down -->
+                              <svg class="h-4 w-4 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                  <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                              </svg>
+                          </div>
+                      </div>
+                  </fieldset>
+              </form>
+          </div>
+      </div>
+      <div class="mt-4 border-t border-gray-700 pt-8 md:flex md:items-center md:justify-between">
+          <div class="flex space-x-6 md:order-2">
+              <a href="#" class="text-gray-400 hover:text-gray-300">
+                  <span class="sr-only">YouTube</span>
+                  <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 50 50" aria-hidden="true">
+                      <path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z" />
+                  </svg>
+              </a>
+
+              <a href="#" class="text-gray-400 hover:text-gray-300">
+                  <span class="sr-only">Instagram</span>
+                  <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                      <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" />
+                  </svg>
+              </a>
+
+              <a href="#" class="text-gray-400 hover:text-gray-300">
+                  <span class="sr-only">YouTube</span>
+                  <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 461.001 461.001" aria-hidden="true">
+                      <path d="M365.257,67.393H95.744C42.866,67.393,0,110.259,0,163.137v134.728 c0,52.878,42.866,95.744,95.744,95.744h269.513c52.878,0,95.744-42.866,95.744-95.744V163.137 C461.001,110.259,418.135,67.393,365.257,67.393z M300.506,237.056l-126.06,60.123c-3.359,1.602-7.239-0.847-7.239-4.568V168.607 c0-3.774,3.982-6.22,7.348-4.514l126.06,63.881C304.363,229.873,304.298,235.248,300.506,237.056z" />
+                  </svg>
+              </a>
+          </div>
+          <p class="mt-8 text-base text-gray-400 md:order-1 md:mt-0">&copy; 2022 YT DEVELOPPEMENT. All rights reserved.</p>
+      </div>
+  </div>
+</footer>
+
+<script type="text/javascript">
+	$("#bt-estimate").on("click", async function( event ) {
+  	let editors = document.getElementById('tb-editors').value;
+		let reviewers = document.getElementById('tb-reviewers').value;
+		let timeSpent = document.getElementById('tb-time').value;
+		if(isNaN(editors) || isNaN(reviewers) || isNaN(timeSpent)) {
+			return;
+		}
+		let minTimeSpentPerEditor = 1;
+		let maxTimeSpentPerEditor = 15;
+		var resultMin = (editors * minTimeSpentPerEditor) + (reviewers * timeSpent) 
+		var resultMax = (editors * maxTimeSpentPerEditor) + (reviewers * timeSpent) 
+		$("#lb-result").text(resultMin + " to " + resultMax + " minutes");
+		$("#waves").fadeOut();
+		$("#form-estimation-bg").animate({
+      backgroundColor: "#F3455F",
+    });
+		$("#form-estimation").fadeOut(function(){
+			$("#form-result").fadeIn();
+		});
+		const jsConfetti = new JSConfetti();
+		await jsConfetti.addConfetti();
+});
+</script>
 
 </body>
-
 </html>
